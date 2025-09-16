@@ -184,8 +184,7 @@ public class Principal {
 	// Fatorial de 5 = 5! = 5 x 4 x 3 x 2 x 1 = 120
 	public static void questao10_MetodosFor() {
 		System.out.println("=== QUESTÃO 10 - MÉTODOS + FOR ===");
-		// SEU CÓDIGO AQUI
-		
+		System.out.println(calcularFatorial(5));
 		System.out.println();
 	}
 	
@@ -210,8 +209,13 @@ public class Principal {
 	// ========================================
 	// TODO: Implemente este método para calcular o fatorial de um número
 	// Use um laço for para fazer o cálculo
-	public static long calcularFatorial(int n) {
-		// SEU CÓDIGO AQUI
-		return 0; // Remova esta linha e implemente a lógica
-	}
+	public static int calcularFatorial(int numero) {
+        int fatorial = 1;
+
+        for (int i = 1; i <= numero; i++) {
+            fatorial *= i;
+        }
+
+        return fatorial;
+    }
 }
